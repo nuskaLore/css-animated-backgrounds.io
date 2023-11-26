@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background-image: radial-gradient(circle, #6699ff, #6600cc);
+    overflow: hidden;
+}
+
+#slideshow {
+  position: fixed;
+  aling-items: center;
+  justify-content: center;
+}
+#div2{
+  width:350px;
+}
+img{
+  width:200px;
+}
