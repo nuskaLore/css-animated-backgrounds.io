@@ -1,0 +1,177 @@
+HTML SCSS JSResult Skip Results Iframe EDIT ON @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700);
+
+* {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background: linear-gradient(limegreen, transparent), linear-gradient(90deg,
+            skyblue, transparent), linear-gradient(-90deg, coral, transparent);
+    background-blend-mode: screen;
+}
+
+p {
+    height: 100px;
+    width: 400px;
+    font-size: 14px;
+    color: hsla(255, 255%, 255%, 1);
+    align-self: center;
+    text-align: center;
+    text-shadow: hsla(247, 10%, 33%, .35) 0 20px 15px;
+
+    & #counter {
+        line-height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    #kudo {
+        height: 80px;
+        width: 80px;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/131045/me3.png')no-repeat center;
+        background-size: cover;
+        border: 5px solid hsla(255, 255%, 255%, 1);
+        border-radius: 100%;
+        text-align: center;
+        box-shadow: 0 0 0 0 hsla(247, 10%, 33%, 0.5);
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        border: 5px solid hsla(255, 255%, 255%, .2);
+    }
+
+    50% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 50px hsla(247, 10%, 33%, 0);
+        border: 5px solid hsla(255, 255%, 255%, .2);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 hsla(247, 10%, 33%, 0);
+        border: 5px solid hsla(255, 255%, 255%, .2);
+    }
+}
+
+div.bg {
+    position: absolute;
+    width: .001vmin;
+    height: .001vmin;
+    border-radius: 50%;
+    opacity: .45;
+    filter: blur(10px);
+
+    &:nth-child(2) {
+        box-shadow: 0 0 45vmax 45vmax #ff00ff;
+        animation: hue 5s 0s linear infinite, move1 10s 0s linear infinite;
+    }
+
+    &:nth-child(3) {
+        box-shadow: 0 0 45vmax 45vmax hsla(0, 0%, 0%, .5);
+        animation: hue 10s 0s linear infinite, move2 15s 0s linear infinite;
+    }
+
+    &:nth-child(4) {
+        box-shadow: 0 0 45vmax 45vmax #00ffff;
+        animation: hue 15s 0s linear infinite, move3 20s 0s linear infinite;
+        opacity: .2;
+    }
+}
+
+@keyframes hue {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes move1 {
+    0% {
+        top: 0%;
+        left: 50%;
+    }
+
+    25% {
+        left: 0%;
+    }
+
+    50% {
+        top: 100%;
+    }
+
+    75% {
+        left: 100%;
+    }
+
+    100% {
+        top: 0%;
+        left: 50%;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        top: 50%;
+        left: 100%;
+    }
+
+    25% {
+        top: 100%;
+    }
+
+    50% {
+        left: 0%;
+    }
+
+    75% {
+        top: 0%;
+    }
+
+    100% {
+        top: 50%;
+        left: 100%;
+    }
+}
+
+@keyframes move3 {
+    0% {
+        top: 100%;
+        left: 50%;
+    }
+
+    25% {
+        left: 100%;
+    }
+
+    50% {
+        top: 0%;
+    }
+
+    75% {
+        left: 0%;
+    }
+
+    100% {
+        top: 100%;
+        left: 50%;
+    }
+}
+
+View Compiled Resources1× 0.5× 0.25×Rerun
