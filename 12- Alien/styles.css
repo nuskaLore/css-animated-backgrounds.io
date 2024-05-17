@@ -1,0 +1,244 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.my-face {
+    width: 70px;
+    height: 70px;
+    background: lawngreen;
+    border-radius: 50% 50%50% 10%;
+    transform: rotate(-46deg);
+}
+
+.alien-wrapper {
+    display: inline-block;
+    margin-bottom: 11px;
+}
+
+.eye {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    position: absolute;
+    top: 28px;
+    left: 8px;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    transform: rotate(85deg);
+}
+
+.eye-2 {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    position: absolute;
+    top: 28px;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    transform: rotate(0deg);
+    right: 8px;
+}
+
+.nose-dot-left {
+    width: 2px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    left: 33px;
+    top: 56px;
+}
+
+.nose-dot-right {
+    width: 2px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    right: 31px;
+    top: 56px;
+}
+
+.mouth {
+    bottom: -10px;
+    position: absolute;
+    right: 28px;
+    transform: rotate(86deg);
+    font-weight: 700;
+}
+
+.alien-wrapper:hover .mouth {
+    transition-duration: 1s;
+    cursor: pointer;
+    transform: rotate(-90deg) scale(1.5);
+    right: 34px;
+}
+
+.neck {
+    width: 15px;
+    height: 10px;
+    background-color: lawngreen;
+    position: absolute;
+    left: 29px;
+    bottom: -17px;
+}
+
+.body-wrapper {
+    display: inline-block;
+}
+
+.body {
+    width: 60px;
+    height: 70px;
+    background-color: lawngreen;
+    margin-left: 6px;
+    position: relative;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.left-hand {
+    width: 15px;
+    height: 60px;
+    background-color: lawngreen;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    left: -5px;
+    position: absolute;
+}
+
+.right-hand {
+    width: 15px;
+    height: 60px;
+    background-color: lawngreen;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    right: -5px;
+    position: absolute;
+}
+
+.left-leg {
+    width: 15px;
+    height: 60px;
+    background-color: lawngreen;
+    left: 4px;
+    position: absolute;
+    bottom: -38px;
+    border-top-left-radius: 10px;
+}
+
+.right-leg {
+    width: 15px;
+    height: 60px;
+    background-color: lawngreen;
+    right: 4px;
+    position: absolute;
+    bottom: -38px;
+    border-top-left-radius: 10px;
+}
+
+.left-finger {
+    width: 10px;
+    height: 24px;
+    background-color: lawngreen;
+    position: absolute;
+    top: -31px;
+    left: -16px;
+    transform: rotate(-16deg);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.right-finger {
+    width: 10px;
+    height: 24px;
+    background-color: lawngreen;
+    position: absolute;
+    top: -41px;
+    right: -4px;
+    transform: rotate(-58deg);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.left-foot {
+    display: inline-block;
+    transform: rotate(50deg);
+}
+
+.right-foot {
+    display: inline-block;
+    transform: rotate(50deg);
+}
+
+.right-foot-right-finger {
+    width: 10px;
+    height: 24px;
+    background-color: lawngreen;
+    position: absolute;
+    top: -72px;
+    right: -25px;
+    transform: rotate(-84deg);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.right-foot-left-finger {
+    width: 10px;
+    height: 24px;
+    background-color: lawngreen;
+    position: absolute;
+    top: -61px;
+    left: 9px;
+    transform: rotate(-40deg);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.body:hover .left-hand {
+    left: -19px;
+    transform: rotate(142deg);
+    top: -24px;
+    border-bottom-left-radius: 0px;
+}
+
+.left-hand-palm {
+    display: none;
+    transform: rotate(205deg);
+    left: 1px;
+    top: -53px;
+}
+
+.body:hover .left-hand-palm {
+    display: block;
+}
+
+.left-hand-right-finger {
+    width: 10px;
+    height: 24px;
+    background-color: lawngreen;
+    position: absolute;
+    top: -61px;
+    left: 69px;
+    transform: rotate(-40deg);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.buld {
+    background: yellow;
+    box-shadow: 2px 3px 103px 54px rgba(231, 166, 26, 0.67);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    position: relative;
+}
